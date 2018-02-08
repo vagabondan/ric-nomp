@@ -347,6 +347,9 @@ Here is an example of the required fields:
     "symbol": "ltc",
     "algorithm": "scrypt",
 
+    // Coinbase value is what is added to a block when it is mined, set this to your pool name so 
+    // explorers can see which pool mined a particular block.
+    "coinbase": "Kryptonite",
     /* Magic value only required for setting up p2p block notifications. It is found in the daemon
        source code as the pchMessageStart variable.
        For example, litecoin mainnet magic: http://git.io/Bi8YFw

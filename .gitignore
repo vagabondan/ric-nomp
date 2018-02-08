@@ -5,3 +5,4 @@ pool_configs/*.json
 !pool_configs/garlicoin.json
 docker-compose.yaml
 config/
+npm-debug.log

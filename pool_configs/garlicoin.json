@@ -2,6 +2,9 @@
     "enabled": true,
     "coin": "garlicoin.json",
 
+    "//": "Coinbase will let explorers know who mined the block, change this to your pool name",
+    "coinbase": "Kryptonite",
+
     "address": "mvtv43LtsQSeyCaBBb8xRj5ZpNt75zDX21",
 
     "rewardRecipients": {

@@ -46,7 +46,7 @@
         "nonce": "^1.0.4",
         "redis": "^2.7.1",
         "request": "^2.81.0",
-        "stratum-pool": "git://github.com/garlicoin-project/grlc-node-stratum-pool.git#435cf05"
+        "stratum-pool": "git://github.com/garlicoin-project/grlc-node-stratum-pool.git#92c5545"
     },
     "engines": {
         "node": ">=6.11.2"
