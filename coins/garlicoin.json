@@ -1,0 +1,7 @@
+{
+    "name": "Garlicoin",
+    "symbol": "GRLC",
+    "algorithm": "lyra2v2",
+    "peerMagic": "d2c6b6db",
+    "peerMagicTestnet": "fdd2c8f2"
+}

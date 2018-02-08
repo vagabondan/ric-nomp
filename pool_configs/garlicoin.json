@@ -1,0 +1,54 @@
+{
+    "enabled": true,
+    "coin": "garlicoin.json",
+
+    "//": "Coinbase will let explorers know who mined the block, change this to your pool name",
+    "coinbase": "Kryptonite",
+
+    "address": "mvtv43LtsQSeyCaBBb8xRj5ZpNt75zDX21",
+
+    "rewardRecipients": {
+        "mvtv43LtsQSeyCaBBb8xRj5ZpNt75zDX21": 5
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 20,
+        "minimumPayment": 0.1,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 42068,
+            "user": "user",
+            "password": "password"
+        }
+    },
+
+    "ports": {
+        "3333": {
+            "diff": 8,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 42069,
+        "disableTransactions": true
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 42068,
+            "user": "user",
+            "password": "password"
+        }
+    ]
+}
