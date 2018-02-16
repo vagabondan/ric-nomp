@@ -1,0 +1,11 @@
+{
+    "name": "Garlicoin",
+    "symbol": "GRLC",
+    "algorithm": "allium",
+    
+    "//": "Coinbase will let explorers know who mined the block, change this to your pool name",
+    "coinbase": "HaventChangedTheConfig",
+    
+    "peerMagic": "d2c6b6db",
+    "peerMagicTestnet": "fdd2c8f2"
+}

@@ -161,12 +161,12 @@ a good pool operator. For starters be sure to read:
 
 #### 1) Downloading & Installing
 
-Clone the repository and run `npm update` for all the dependencies to be installed:
+Clone the repository and run `npm install` for all the dependencies to be installed:
 
 ```bash
 git clone https://github.com/zone117x/node-open-mining-portal.git nomp
 cd nomp
-npm update
+npm install
 ```
 
 #### 2) Configuration
@@ -347,6 +347,9 @@ Here is an example of the required fields:
     "symbol": "ltc",
     "algorithm": "scrypt",
 
+    // Coinbase value is what is added to a block when it is mined, set this to your pool name so 
+    // explorers can see which pool mined a particular block.
+    "coinbase": "Kryptonite",
     /* Magic value only required for setting up p2p block notifications. It is found in the daemon
        source code as the pchMessageStart variable.
        For example, litecoin mainnet magic: http://git.io/Bi8YFw
@@ -530,7 +533,7 @@ When updating NOMP to the latest code its important to not only `git pull` the l
 the `node-stratum-pool` and `node-multi-hashing` modules, and any config files that may have been changed.
 * Inside your NOMP directory (where the init.js script is) do `git pull` to get the latest NOMP code.
 * Remove the dependenices by deleting the `node_modules` directory with `rm -r node_modules`.
-* Run `npm update` to force updating/reinstalling of the dependencies.
+* Run `npm install` to force updating/reinstalling of the dependencies.
 * Compare your `config.json` and `pool_configs/coin.json` configurations to the latest example ones in this repo or the ones in the setup instructions where each config field is explained. You may need to modify or add any new changes.
 
 Donations
