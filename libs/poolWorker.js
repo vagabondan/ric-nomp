@@ -171,6 +171,11 @@ module.exports = function(logger){
 
         var authorizeFN = function (ip, port, workerName, password, callback) {
             handlers.auth(port, workerName, password, function(authorized){
+            if(authorized){
+                if(workerName.length !== 34){
+                    authorized = false;
+                }
+            }
 
                 var authString = authorized ? 'Authorized' : 'Unauthorized ';
 
